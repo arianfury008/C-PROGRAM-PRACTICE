@@ -5,16 +5,16 @@
 
 // Freezer temperature
 int main(){
-    int temperature;
-    int Timehaspassed;
+    float temperature;
+    float Timehaspassed;
 
     printf("Enter the time Freezer has worked (Input : Second) : ");
-    scanf("%d",&Timehaspassed);
-    printf("Timehaspassed to Hours : %d\n",Timehaspassed / 60);
+    scanf("%f",&Timehaspassed);
+    printf("Timehaspassed to Hours : %f\n",Timehaspassed / 60);
 
-    temperature = (int)4 * pow(Timehaspassed / 60,2) / Timehaspassed + 2 -20;
+    temperature = (float)4 * pow(Timehaspassed / 60,2) / Timehaspassed + 2 -20;
     
-    printf("Freezer temperature %dC°",temperature);
+    printf("Freezer temperature %fC°",temperature);
 
     return 0;
 }
